@@ -6,3 +6,6 @@ from django.shortcuts import render
 def index(request , group_name):
     print("Group name...", group_name)
     return render(request, 'app/index.html',{'groupname':group_name})
+def firstPage(request ):
+    
+    return render(request, 'app/first.html')
